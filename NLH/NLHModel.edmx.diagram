@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e315c570e9d846ef8bc513c31e7de742" Name="Diagram1" ShowGrid="false" DisplayType="true">
+        <EntityTypeShape EntityType="NLHModel.CompagnieAssurance" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHModel.Departement" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHModel.DossierAdmission" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHModel.Lit" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHModel.Medecin" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHModel.Parent" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHModel.Patient" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHModel.TypeLit" Width="1.5" PointX="0.75" PointY="12.375" IsExpanded="true" />
+        <AssociationConnector Association="NLHModel.FK_Patients_CompagnieAssurances" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHModel.FK_Lits_Departements" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHModel.FK_DossierAdmissions_Lits" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHModel.FK_DossierAdmissions_Medecins" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHModel.FK_DossierAdmissions_Patients" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHModel.FK_Lits_TypeLits" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHModel.FK_Patients_Parents" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
